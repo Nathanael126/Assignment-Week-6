@@ -1,0 +1,11 @@
+inventory = {
+    'gold': 500,
+    'pouch': ['flint', 'twine', 'gemstone'],
+    'backpack': ['xylophone','dagger', 'bedroll','bread loaf'],
+    'pocket': ['seashell','strange berry','lint']
+}
+inventory['backpack'].sort()
+inventory['backpack'].remove('dagger')
+inventory['gold'] += 50
+for a,b in inventory.items():
+    print(a,": ",b)
