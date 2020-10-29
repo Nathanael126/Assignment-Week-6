@@ -1,3 +1,4 @@
+# Defining compute_bill function
 def compute_bill(a):
     total = 0
     for x in a:
@@ -7,6 +8,7 @@ def compute_bill(a):
                 stock[x] -= 1
     return total
 
+# Create groceries list and create other dictionaries
 groceries = ["banana","orange","apple"]
 stock = {
     "banana": 6,
@@ -20,6 +22,8 @@ prices = {
     "orange": 1.5,
     "pear": 3
 }
+
+# Print the bill and individual information
 print("Bill total: ", compute_bill(groceries),"\n")
 for a,b in prices.items():
     print(a,"\nprice:",b,"\nstock:",stock[a],"\n")

@@ -1,3 +1,5 @@
+#INCOMPLETE (Doesnt work)
+
 def find(endLetter):
     for x in Pokemon_Dictionary:
         if endLetter == Pokemon_Dictionary[x][0] and Pokemon_Dictionary[x] not in current_Pokemons:

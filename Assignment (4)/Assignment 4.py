@@ -1,3 +1,4 @@
+# Defining all functions
 def average(a):
     return float(sum(a)) / float(len(a))
 def get_average(a):
@@ -21,12 +22,13 @@ def get_letter_grade(a):
         return "D"
     else:
         return "F"
-
 def get_class_average(a):
     results = []
     for z in a:
         results.append(get_average(z))
     return average(results)
+
+# Creating student information
 eren = {
   "name": "Eren",
   "homework": [90.0,97.0,75.0,92.0],
@@ -45,7 +47,10 @@ armin = {
 "quizzes": [0.0, 75.0, 78.0],
 "tests": [100.0, 100.0]
 }
+# Student list
 students = [eren,mikasa,armin]
+
+# Prints individual information as well as class averages
 for x in students:
     print("Name:",x["name"],"\nHomework:",x["homework"],"\nQuizzes:",x["quizzes"],"\nTests:",x["tests"],"\nWeighted grades:",get_average(x),"\nLetter Grade:",get_letter_grade(get_average(x)),"\n")
 print("Class average grade:",get_class_average(students),"\nClass average letter grade:",get_letter_grade(get_class_average(students)))

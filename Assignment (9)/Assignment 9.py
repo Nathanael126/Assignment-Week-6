@@ -1,9 +1,11 @@
+# Create variables and lists
 Sentence = "Mr. Miyagi bought cheapsite.com for 1.5 million dollars, i.e. he paid a lot for it. Did he mind? Adam Jones Jr. thinks he didn't. In any case, this isn't true... Well, with a probability of .9 it isn't."
 Paragraph = []
 counter1 = 0
 Sentences = []
 Titles = ["Mr.","Mrs.","Dr."]
 
+# Way too long sentence split process
 for a in Sentence.split():
     counter1 += 1
     try:
@@ -23,5 +25,7 @@ for a in Sentence.split():
         break
 x = " ".join(map(str,Sentences))
 Paragraph.append(x)
+
+# Print end result
 for b in Paragraph:
     print(b)
